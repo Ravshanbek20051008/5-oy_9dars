@@ -1,6 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
 .wrapper {
   width: 1200px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
+  margin: auto;
+  display: none;
+}
+.image img {
+  width: 550px;
+  border-radius: 15px;
+  height: 450px;
+  margin-top: -250px;
+}
+.info {
+  width: 50%;
+  font-family: Montserrat;
+}
+h2 {
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(71, 69, 69);
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: rgb(107, 106, 106);
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 35px;
+  color: rgb(52, 47, 47);
+}
+
+p {
+  line-height: 2.2;
+  margin-bottom: 30px;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.aylana {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.aylana1 {
+  width: 25px;
+  height: 25px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  :hover {
+    box-shadow: 2px 3px 8px 17px rgba(34, 60, 80, 0.2);
+  }
+}
+#inputtype {
+  font-size: 24px;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid dodgerblue;
+  margin-bottom: 40px;
+}
+#loader {
+  margin-left: 35vw;
+  margin-top: 20vh;
+  position: fixed;
+}
+.btn button {
+  background-color: rgb(52, 52, 160);
+  color: white;
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin-bottom: 100px;
 }

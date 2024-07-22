@@ -3,22 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/details.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/details.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div id="loader">
+      <img src="../image/Loading_icon.gif" alt="" />
+    </div>
+    <div class="wrapper" id="wrapper">
       <div class="image">
         <img
+          id="image"
           src="	https://images.pexels.com/photos/5705090/pexels-photo-5705090.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt=""
         />
       </div>
       <div class="info">
-        <h2>Futuristic Shelves</h2>
-        <h3>Luxora</h3>
-        <h4>23423</h4>
-        <p>
+        <h2 id="title">Futuristic Shelves</h2>
+        <h3 id="company">Luxora</h3>
+        <h4 id="prise">$23423</h4>
+        <p id="description">
           Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore
           etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat,
           authentic chillwave trust fund. Viral typewriter fingerstache
@@ -26,6 +36,14 @@
           pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk
           microdosing gochujang live-edge
         </p>
+        <h4>Colors</h4>
+        <div class="colors">
+          <a href="#" class="aylana1"></a>
+          <a href="#" class="aylana"></a>
+        </div>
+        <label for="">Amount </label><br />
+        <input type="number" id="inputtype" placeholder="Tavar soni.." />
+        <div class="btn"><button>ADD TO BAG</button></div>
       </div>
     </div>
     <script src="../js/details.js" type="module"></script>
