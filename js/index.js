@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
       cards.length &&
         cards.forEach(function (card) {
           card.addEventListener("click", function () {
+            let id = this.getAttribute("data-id");
             window.location.assign(
-              "http://127.0.0.1:5500/index.html/pages/details.html"
+              `http://127.0.0.1:5500/pages/details.html?id=${id}`
             );
           });
         });
